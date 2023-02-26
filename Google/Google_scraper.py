@@ -53,7 +53,7 @@ def Google_job_internship_scrape(index):
             wait.until(EC.presence_of_element_located((By.XPATH,google_job_title))) #dummy to wait till page is loaded
 
             page = driver.execute_script('return document.body.innerHTML')
-            soup=BeautifulSoup(''.join(page), 'html.parser')
+            soup=BeautifulSoup(''.join(page), 'lxml')
             dom = etree.HTML(str(soup))
 
             index+=1 
