@@ -8,6 +8,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+
+#object of ChromeOptions
+options = webdriver.ChromeOptions()
+#setting headless parameter
+options.headless = True
 
 GOOGLE_INTERNSHIP_URL = "https://careers.google.com/jobs/results/?distance=50&employment_type=INTERN"
 fieldnames = ['Company_Name','Job_title','Url','Location','Description']
@@ -36,8 +42,8 @@ def Google_job_internship_scrape(index):
     google_internship=[]
     location=""
     description=""
-    driver = webdriver.Chrome()
-    driver.headless = True
+    driver = webdriver.Chrome(options=options)
+   
     driver.get(GOOGLE_INTERNSHIP_URL)
     wait=WebDriverWait(driver,10)
     while True:
