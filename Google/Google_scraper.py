@@ -153,7 +153,6 @@ def Google_job_newgrad_scrape(index):
 
 
 
-
 def Google_job_experienced_scrape(index):
     google_experienced=[]
     location=""
@@ -216,7 +215,7 @@ def add_to_csv(fieldnames,google,title):
         writer.writerows(google)
 
 
-Google_job_internship_scrape(1)
+#Google_job_internship_scrape(1)
 #Google_job_experienced_scrape(1)
 #Google_job_newgrad_scrape(1)
 
