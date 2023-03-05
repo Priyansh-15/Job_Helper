@@ -215,8 +215,5 @@ def add_to_csv(fieldnames,google,title):
         writer.writerows(google)
 
 
-#Google_job_internship_scrape(1)
-#Google_job_experienced_scrape(1)
-#Google_job_newgrad_scrape(1)
 
 
