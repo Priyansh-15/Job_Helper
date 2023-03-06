@@ -156,3 +156,61 @@ def Microsoft_job_newgrad_scrape(index):
             break
 
     add_to_csv(fieldnames,microsoft_newgrad,'Microsoft_newgrad_openings.csv')
+
+def Microsoft_job_experienced_scrape(index):
+    microsoft_experienced=[]
+    location=""
+    description=""
+    driver = webdriver.Chrome(options=options)
+    driver.get(MICROSOFT_EXPERIENCED_URL)
+    driver.execute_script("window.scrollTo(0, 300)")
+    wait=WebDriverWait(driver,10)
+    wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@id="onetrust-close-btn-container"]/button'))).click()
+    
+    while True:
+        try:
+            microsoft_job_expand='//*[@id="content"]/div/div[2]/table/tbody/tr['+str(index)+']/td[1]/a'
+            wait.until(EC.element_to_be_clickable((By.XPATH,microsoft_job_expand))).click()
+            wait.until(EC.presence_of_element_located((By.XPATH,microsoft_job_title))) #dummy to wait till page is loaded
+
+            page = driver.execute_script('return document.body.innerHTML')
+            soup=BeautifulSoup(''.join(page), 'lxml')
+            dom = etree.HTML(str(soup))
+
+            index+=1 
+
+            #scraped information
+            job_title=dom.xpath(microsoft_job_title)[0].text
+            job_url=driver.current_url
+            location_data=dom.xpath(microsoft_job_location)
+            description_data=dom.xpath(microsoft_job_description)
+
+            for l in location_data:
+                location=etree.tostring(l, pretty_print=True).decode()
+                location=text_decode(location)
+
+            for d in description_data:
+                description+=etree.tostring(d, pretty_print=True).decode()
+
+            job_data={
+                'Company_Name':'Microsoft',
+                'Job_title':job_title,
+                'Url':job_url,
+                'Location':location,
+                'Description':text_decode(description)
+            } 
+            microsoft_experienced.append(job_data)
+            
+            wait.until(EC.element_to_be_clickable((By.XPATH,microsoft_back_button))).click() 
+            #time.sleep(1.5)
+            wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="content"]/div/div[2]/table/tbody/tr['+str(index)+']/td[1]')))
+            driver.execute_script("window.scrollTo(0, 800)")
+            print("index")
+
+        except TimeoutException:
+            driver.quit()
+            break
+
+    add_to_csv(fieldnames,microsoft_experienced,'Microsoft_experienced_openings.csv')
+
+
