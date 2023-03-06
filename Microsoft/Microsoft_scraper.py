@@ -217,3 +217,8 @@ def add_to_csv(fieldnames,microsoft,title):
     with open(title, 'w', encoding='UTF8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writerows(microsoft)
+
+#auto()
+#Microsoft_job_internship_scrape(1)
+#Microsoft_job_newgrad_scrape(1)
+#Microsoft_job_experienced_scrape(1)
