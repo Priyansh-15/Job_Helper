@@ -91,8 +91,7 @@ def Cisco_job_internship_scrape(index):
             cisco_internship.append(job_data)
             
             wait.until(EC.element_to_be_clickable((By.XPATH,cisco_back_button))).click() 
-            time.sleep(1.5)
-            #wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="content"]/div/div[2]/table/tbody/tr['+str(index)+']/td[1]')))
+            wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="content"]/div/div[2]/table/tbody/tr['+str(index)+']/td[1]/a')))
             driver.execute_script("window.scrollTo(0, 800)")
             print("index")
 
@@ -225,7 +224,7 @@ def add_to_csv(fieldnames,google,title):
         writer.writerows(google)
 
 #auto()
-#Cisco_job_internship_scrape(1)
+Cisco_job_internship_scrape(1)
 #Cisco_job_newgrad_scrape(1)
 #Cisco_job_experienced_scrape(1)
 
