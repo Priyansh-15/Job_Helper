@@ -17,7 +17,7 @@ options.headless = True
 
 AMAZON_INTERNSHIP_URL = "https://www.amazon.jobs/en/business_categories/student-programs?offset=0&result_limit=10&sort=relevant&category%5B%5D=software-development&category%5B%5D=hardware-development&category%5B%5D=data-science&category%5B%5D=operations-it-support-engineering&category%5B%5D=systems-quality-security-engineering&job_type%5B%5D=Internship&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=&city=&country=&region=&county=&query_options=&"
 AMAZON_NEWGRAD_URL="https://www.amazon.jobs/en/business_categories/student-programs?offset=0&result_limit=10&sort=relevant&category%5B%5D=software-development&category%5B%5D=hardware-development&category%5B%5D=operations-it-support-engineering&category%5B%5D=data-science&category%5B%5D=systems-quality-security-engineering&job_type%5B%5D=Full-Time&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=&city=&country=&region=&county=&query_options=&"
-AMAZON_EXPERIENCED_URL= "https://careers.google.com/jobs/results/?distance=50&employment_type=FULL_TIME"
+AMAZON_EXPERIENCED_URL= "https://www.amazon.jobs/en/job_categories/software-development?offset=0&result_limit=10&sort=relevant&job_type%5B%5D=Full-Time&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=&city=&country=&region=&county=&query_options=&"
 fieldnames = ['Company_Name','Job_title','Url','Location','Description']
 
 
@@ -151,6 +151,59 @@ def Amazon_job_newgrad_scrape(index):
 
 
 
+def Amazon_job_experienced_scrape(index):
+    amazon_experienced=[]
+    location=""
+    description=""
+    driver = webdriver.Chrome(options=options)
+    
+    driver.get(AMAZON_EXPERIENCED_URL)
+    wait=WebDriverWait(driver,10)
+    while True:
+        try:
+            amazon_job_expand='//*[@id="search-results-box"]/div[2]/div/div/div[2]/content/div/div/div[2]/div[2]/div/div['+str(index)+']/a/div'
+            wait.until(EC.element_to_be_clickable((By.XPATH,amazon_job_expand))).click()
+            wait.until(EC.presence_of_element_located((By.XPATH,amazon_job_title))) #dummy to wait till page is loaded
+
+            page = driver.execute_script('return document.body.innerHTML')
+            soup=BeautifulSoup(''.join(page), 'lxml')
+            dom = etree.HTML(str(soup))
+
+            index+=1 
+
+            #scraped information
+            job_title=dom.xpath(amazon_job_title)[0].text
+            job_url=driver.current_url
+            location_data=dom.xpath(amazon_job_location)
+            description_data=dom.xpath(amazon_job_description)
+
+            for l in location_data:
+                location=etree.tostring(l, pretty_print=True).decode()
+                location=text_decode(location)
+
+            for d in description_data:
+                description=etree.tostring(d, pretty_print=True).decode()
+            
+            job_data={
+                'Company_Name':'Amazon',
+                'Job_title':job_title,
+                'Url':job_url,
+                'Location':location,
+                'Description':text_decode(description)
+            } 
+            amazon_experienced.append(job_data)
+            
+            #wait.until(EC.element_to_be_clickable((By.XPATH,amazon_back_button))).click() 
+            driver.back()
+            #time.sleep(1.5)
+            wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="search-results-box"]/div[2]/div/div/div[2]/content/div/div/div[2]/div[2]/div/div['+str(index)+']/a/div')))
+            print(index-1)
+
+        except TimeoutException:
+            driver.quit()
+            break
+
+    add_to_csv(fieldnames,amazon_experienced,'Amazon_experienced_openings.csv')
 
 
 
@@ -160,9 +213,9 @@ def add_to_csv(fieldnames,amazon,title):
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writerows(amazon)
 
-Amazon_job_internship_scrape(1)
-Amazon_job_newgrad_scrape(1)
-
+#Amazon_job_internship_scrape(1)
+#Amazon_job_newgrad_scrape(1)
+Amazon_job_experienced_scrape(1)
 
 
   
