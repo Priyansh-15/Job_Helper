@@ -22,8 +22,7 @@ fieldnames = ['Company_Name','Job_title','Url','Location','Description']
 
 
 #LIST OF REQUIRED XPATHS
-amazon_back_button='/html/body/div[1]/header/div[1]/div[2]/div/div/button'
-amazon_job_location='//*[@id="jump-content"]/main/div/div[2]/div/div/div/div[1]/div[1]/ul[2]/li[2]'
+amazon_job_location='//*[@id="job-detail-body"]/div/div[2]/div/div[1]/div[2]/div[1]/div/div'
 amazon_job_title='//*[@id="job-detail"]/div[1]/div/div/div/div[1]/div/h1'
 amazon_job_description='//*[@id="job-detail-body"]/div/div[1]/div/div[2]'
 
@@ -45,8 +44,8 @@ def Amazon_job_internship_scrape(index):
     amazon_internship=[]
     location=""
     description=""
-    driver = webdriver.Chrome()
-    driver.maximize_window()
+    driver = webdriver.Chrome(options=options)
+    
     driver.get(AMAZON_INTERNSHIP_URL)
     wait=WebDriverWait(driver,10)
     while True:
@@ -75,7 +74,7 @@ def Amazon_job_internship_scrape(index):
                 description=etree.tostring(d, pretty_print=True).decode()
             
             job_data={
-                'Company_Name':'Google',
+                'Company_Name':'Amazon',
                 'Job_title':job_title,
                 'Url':job_url,
                 'Location':location,
@@ -83,11 +82,11 @@ def Amazon_job_internship_scrape(index):
             } 
             amazon_internship.append(job_data)
             
-            wait.until(EC.element_to_be_clickable((By.XPATH,amazon_back_button))).click() 
-            time.sleep(1.5)
-            #wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="search-results"]/li['+str(index-1)+']/div/a/div')))
-            driver.execute_script("window.scrollTo(0, 1080)") 
-            print("index")
+            #wait.until(EC.element_to_be_clickable((By.XPATH,amazon_back_button))).click() 
+            driver.back()
+            #time.sleep(1.5)
+            wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="search-results-box"]/div[2]/div/div/div[2]/content/div/div/div[2]/div[2]/div/div['+str(index)+']/a/div')))
+            print(index-1)
 
         except TimeoutException:
             driver.quit()
@@ -104,12 +103,12 @@ def Amazon_job_internship_scrape(index):
 
 
 
-def add_to_csv(fieldnames,google,title):
-    with open(title, 'w', encoding='UTF8', newline='') as f:
+def add_to_csv(fieldnames,amazon,title):
+    with open(title, 'w', encoding='UTF16', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writerows(google)
+        writer.writerows(amazon)
 
-
+Amazon_job_internship_scrape(1)
 
 
   
