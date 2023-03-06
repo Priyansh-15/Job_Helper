@@ -12,3 +12,36 @@ OTHER SOURCES:-
 * lxml.html - https://lxml.de/lxmlhtml.html
 * beautiful soup documentation - https://beautiful-soup-4.readthedocs.io/en/latest/#:~:text=Beautiful%20Soup%20is%20a%20Python,hours%20or%20days%20of%20work.
 * https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
+
+
+### Cisco
+OTHER SOURCES:-
+* lxml.html - https://lxml.de/lxmlhtml.html
+* beautiful soup documentation - https://beautiful-soup-4.readthedocs.io/en/latest/#:~:text=Beautiful%20Soup%20is%20a%20Python,hours%20or%20days%20of%20work.
+* https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
+* https://www.tutorialspoint.com/articles/category/selenium
+
+Target website:- https://jobs.cisco.com/jobs/SearchJobs/?21180=%5B165%5D&21180_format=6022&21181=%5B186%2C194%2C187%2C55816092%5D&21181_format=6023&listFilterMode=1
+
+DATA TO BE EXTRACTED:-
+![image](https://user-images.githubusercontent.com/54525819/223161720-c2d368ca-1c2a-4fa6-8556-706ccee4f6a1.png)
+
+DATA AFTER EXTRACTION:-
+![image](https://user-images.githubusercontent.com/54525819/223166472-6db779cb-c24f-4fba-b51a-06c83e284f9a.png)
+
+### Amazon
+OTHER SOURCES:-
+* lxml.html - https://lxml.de/lxmlhtml.html
+* beautiful soup documentation - https://beautiful-soup-4.readthedocs.io/en/latest/#:~:text=Beautiful%20Soup%20is%20a%20Python,hours%20or%20days%20of%20work.
+* https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
+* https://www.tutorialspoint.com/articles/category/selenium
+
+Target website:- https://www.amazon.jobs/en/job_categories/software-development?offset=0&result_limit=10&sort=relevant&job_type%5B%5D=Full-Time&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=&city=&country=&region=&county=&query_options=&
+
+DATA TO BE EXTRACTED:-
+![image](https://user-images.githubusercontent.com/54525819/223167832-1d2d55c5-9ab1-457d-970b-e41b20c71789.png)
+
+
+DATA AFTER EXTRACTION:-
+![image](https://user-images.githubusercontent.com/54525819/223168443-62b5778d-3403-4274-a9db-ce0a9b5c4dc6.png)
+
