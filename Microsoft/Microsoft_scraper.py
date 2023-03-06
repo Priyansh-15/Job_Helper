@@ -54,7 +54,7 @@ def Microsoft_job_internship_scrape(index):
     driver.execute_script("window.scrollTo(0, 300)")
     wait=WebDriverWait(driver,10)
     wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@id="onetrust-close-btn-container"]/button'))).click()
-    
+
     while True:
         try:
             microsoft_job_expand='//*[@id="content"]/div/div[2]/table/tbody/tr['+str(index)+']/td[1]/a'
@@ -213,4 +213,7 @@ def Microsoft_job_experienced_scrape(index):
 
     add_to_csv(fieldnames,microsoft_experienced,'Microsoft_experienced_openings.csv')
 
-
+def add_to_csv(fieldnames,microsoft,title):
+    with open(title, 'w', encoding='UTF8', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writerows(microsoft)
