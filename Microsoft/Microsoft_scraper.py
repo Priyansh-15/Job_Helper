@@ -15,13 +15,15 @@ options = webdriver.ChromeOptions()
 #setting headless parameter
 options.headless = True
 
-MICROSOFT_INTERNSHIP_URL = "https://jobs.cisco.com/jobs/SearchJobs/?21180=%5B165%5D&21180_format=6022&21181=%5B186%2C194%2C187%2C55816092%5D&21181_format=6023&listFilterMode=1"
-MICROSOFT_NEWGRAD_URL ="https://jobs.cisco.com/jobs/SearchJobs/?21180=%5B164%5D&21180_format=6022&21181=%5B186%2C194%2C187%2C55816092%5D&21181_format=6023&listFilterMode=1"
-MICROSOFT_EXPERIENCED_URL ="https://jobs.cisco.com/jobs/SearchJobs/?21180=%5B163%5D&21180_format=6022&21181=%5B186%2C194%2C187%2C55816092%5D&21181_format=6023&listFilterMode=1"
+MICROSOFT_INTERNSHIP_URL = "https://careers.microsoft.com/students/us/en/search-results"
+MICROSOFT_NEWGRAD_URL ="https://careers.microsoft.com/students/us/en/search-results"
+MICROSOFT_EXPERIENCED_URL ="https://careers.microsoft.com/us/en/search-results"
 fieldnames = ['Company_Name','Job_title','Url','Location','Description']
 
 
 #LIST OF REQUIRED XPATHS
+microsoft_employment_type_button='/html/body/div[2]/div[2]/div/div[2]/div[1]/section[1]/div/div/div[3]/div[8]/div[1]/span/button'
+microsoft_intern_button='/html/body/div[2]/div[2]/div/div[2]/div[1]/section[1]/div/div/div[3]/div[8]/div[2]/div/div[2]/ul/li[1]/label/span[2]'
 microsoft_back_button='//*[@id="content"]/div/div[1]/div/nav/ul/li/a'
 microsoft_job_location='//*[@id="content"]/div/div[2]/div/div[2]/div[2]/div/div/ul/li[1]/div[2]'
 microsoft_job_title='//*[@id="content"]/div/div[2]/div/div[1]/h2'
