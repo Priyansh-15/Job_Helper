@@ -7,7 +7,15 @@ const Homepage = () => {
     
     <div>
         <Navbar/>
-      
+         <div className='mainapp'>
+            <div className='user_form_title'>
+              User Profile Details
+            </div>
+            <div className='form'>
+                <div className='section_head'>Personal details</div>
+                
+            </div>
+         </div>
     </div>
   )
 }
