@@ -46,3 +46,30 @@ DATA TO BE EXTRACTED:-
 DATA AFTER EXTRACTION:-
 
 <img src="https://user-images.githubusercontent.com/54525819/223168443-62b5778d-3403-4274-a9db-ce0a9b5c4dc6.png" width="800" height="200">
+
+
+## All Reference links for UI
+Online Sources:-
+* Reactjs - https://reactjs.org/docs/getting-started.html
+* Reactjs form - https://reactjs.org/docs/forms.html
+* media query - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+### Components
+#### Navbar
+<img src="https://user-images.githubusercontent.com/54525819/224476129-e3d6c772-bbb3-4412-9810-cd78511c576e.png" width="800" height="200">
+
+### Pages
+#### homepage
+* Personal details
+<img src="https://user-images.githubusercontent.com/54525819/224476197-7fc6dbc9-de2a-4ddd-b262-d0ff3bf7582b.png" width="800" height="200">
+* Skill evaluation
+<img src="https://user-images.githubusercontent.com/54525819/224476287-5babae9b-6894-4a3e-8560-10a67478321d.png" width="800" height="200">
+* Soft skill
+<img src="https://user-images.githubusercontent.com/54525819/224476327-854c8ffa-3299-43e9-b1dc-3a1f08373299.png" width="800" height="200">
+* Websites
+<img src="https://user-images.githubusercontent.com/54525819/224476363-6b54f3bf-fa1d-435f-832b-16d1d4ca00d1.png" width="800" height="200">
+
+
+
+
+

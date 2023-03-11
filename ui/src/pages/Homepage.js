@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+
 
 import "./Homepage.css"
 const Homepage = () => {
   return (
     
     <div>
-        <Navbar/>
+        
          <div className='mainapp'>
             <div className='user_form_title'>
               User Profile Details
@@ -179,9 +179,28 @@ const Homepage = () => {
                       </div>
                   </fieldset>
                 </div>
+                <div className='section_5'>
+                  <fieldset>
+                    <legend>Resume *</legend>
+                    <div className='main_section_5'>
+                      </div> 
+                    <input type='file'/>
+                     
+                    <button className='btns'> 
+                      UPLOAD
+                    </button>
+                  </fieldset>
+                </div>
+                <center>
+                <div className='btn'>
+                  NEXT
+                </div>
+                </center>
+                
             </div>
           
             </form>
+            
          </div>
     </div>
   )

@@ -13,6 +13,7 @@
     margin-left: 200px;
     margin-right: 200px;
     margin-bottom: 200px;
+    
     background-color: aliceblue;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -82,4 +83,40 @@ legend {
     font-family: Impact,Charcoal,sans-serif;
     font-weight: 100;
     color:#647DEE;
+}
+.section_5{
+    width:100%;
+}
+.res{
+    font-size: 20px;
+    font-family: Impact,Charcoal,sans-serif;
+    font-weight: 200;
+    color:#7F53AC;
+}
+.btn{
+    font-size: 25px;
+    font-family: Impact,Charcoal,sans-serif;
+    font-weight: 200;
+    color:#7F53AC;
+    border: 5px solid;
+    border-top-color:  #7F53AC;
+    border-bottom-color:  #647DEE;
+    border-left-color:  #7F53AC;
+    border-right-color:  #647DEE;
+    text-align: center;
+    width: 70px;
+}
+.btns{
+    font-size: 15px;
+    font-family: Impact,Charcoal,sans-serif;
+    font-weight: 100;
+    color:#7F53AC;
+    border: 5px solid;
+    border-radius: 20px;
+    border-top-color:  #7F53AC;
+    border-bottom-color:  #647DEE;
+    border-left-color:  #7F53AC;
+    border-right-color:  #647DEE;
+    text-align: center;
+    width: 70px;
 }
