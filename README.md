@@ -39,5 +39,3 @@ DATA TO BE EXTRACTED:-
 DATA AFTER EXTRACTION:-
 
 <img src="https://user-images.githubusercontent.com/54525819/223168443-62b5778d-3403-4274-a9db-ce0a9b5c4dc6.png" width="800" height="200">
-
-
