@@ -15,8 +15,15 @@ OTHER SOURCES:-
 
 
 ## Google
+Target website:-https://careers.google.com/jobs/results/?category=DATA_CENTER_OPERATIONS&category=DEVELOPER_RELATIONS&category=HARDWARE_ENGINEERING&category=INFORMATION_TECHNOLOGY&category=MANUFACTURING_SUPPLY_CHAIN&category=NETWORK_ENGINEERING&category=PRODUCT_MANAGEMENT&category=PROGRAM_MANAGEMENT&category=SOFTWARE_ENGINEERING&category=TECHNICAL_INFRASTRUCTURE_ENGINEERING&category=TECHNICAL_SOLUTIONS&category=TECHNICAL_WRITING&category=USER_EXPERIENCE&employment_type=INTERN&jex=ENTRY_LEVEL
 
+DATA TO BE EXTRACTED:-
 
+![image](https://user-images.githubusercontent.com/54525819/224471987-308db510-8752-46de-a39b-170cf72f5b65.png)
+
+DATA AFTER EXTRACTION:-
+
+![image](https://user-images.githubusercontent.com/54525819/224472055-b1172639-1f08-425b-87ba-1a5c7ceae79e.png)
 
 ## Cisco
 Target website:- https://jobs.cisco.com/jobs/SearchJobs/?21180=%5B165%5D&21180_format=6022&21181=%5B186%2C194%2C187%2C55816092%5D&21181_format=6023&listFilterMode=1
