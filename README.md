@@ -46,3 +46,19 @@ DATA TO BE EXTRACTED:-
 DATA AFTER EXTRACTION:-
 
 <img src="https://user-images.githubusercontent.com/54525819/223168443-62b5778d-3403-4274-a9db-ce0a9b5c4dc6.png" width="800" height="200">
+
+
+## All Reference links for UI
+Online Sources:-
+* Reactjs - https://reactjs.org/docs/getting-started.html
+* Reactjs form - https://reactjs.org/docs/forms.html
+* media query - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+### Components
+#### Navbar
+
+### Pages
+#### homepage
+
+
+
