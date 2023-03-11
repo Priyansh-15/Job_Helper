@@ -19,11 +19,11 @@ Target website:-https://careers.google.com/jobs/results/?category=DATA_CENTER_OP
 
 DATA TO BE EXTRACTED:-
 
-![image](https://user-images.githubusercontent.com/54525819/224471987-308db510-8752-46de-a39b-170cf72f5b65.png)
+<img src="https://user-images.githubusercontent.com/54525819/224471987-308db510-8752-46de-a39b-170cf72f5b65.png" width="800" height="200">
 
 DATA AFTER EXTRACTION:-
 
-![image](https://user-images.githubusercontent.com/54525819/224472055-b1172639-1f08-425b-87ba-1a5c7ceae79e.png)
+<img src="https://user-images.githubusercontent.com/54525819/224472055-b1172639-1f08-425b-87ba-1a5c7ceae79e.png" width="800" height="200">
 
 ## Cisco
 Target website:- https://jobs.cisco.com/jobs/SearchJobs/?21180=%5B165%5D&21180_format=6022&21181=%5B186%2C194%2C187%2C55816092%5D&21181_format=6023&listFilterMode=1
