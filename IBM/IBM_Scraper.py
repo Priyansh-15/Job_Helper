@@ -21,16 +21,13 @@ def navigate_browser():
     wait = WebDriverWait(driver, 10)
     cookie_element = wait.until(EC.visibility_of_element_located((By.XPATH, "//button[contains(text(), 'Required only')]")))
     cookie_element.click()
-    wait = WebDriverWait(driver, 10)
-    careers_element = wait.until(EC.visibility_of_element_located((By.XPATH, "//a[contains(text(), 'Explore IBM careers')]")))
-    careers_element.click()
-    wait = WebDriverWait(driver, 10)
-    jobs_element = wait.until(EC.visibility_of_element_located((By.XPATH, "//a[contains(text(), 'Jobs')]")))
-    jobs_element.click()
+    careers_link = driver.find_element(By.LINK_TEXT, "Explore IBM careers")
+    careers_link.click()
+    jobs_link = driver.find_element(By.LINK_TEXT, "Jobs")
+    jobs_link.click()
     get_internship_jobs()
     get_entry_level_jobs()
     get_experienced_jobs()
-    pass
 
 def start_browser():
     driver.get(IBM_URL)
