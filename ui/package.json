@@ -6,10 +6,18 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "flatlist-react": "^1.5.13",
+    "json2csv": "^6.0.0-alpha.2",
+    "os": "^0.1.2",
     "react": "^18.2.0",
+    "react-csv": "^2.2.2",
     "react-dom": "^18.2.0",
+    "react-native": "^0.71.4",
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
+    "react-text": "^3.2.5",
+    "react-view": "^2.3.7",
+    "stream": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

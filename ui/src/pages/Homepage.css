@@ -48,6 +48,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.main_section_5{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 fieldset {
     border: 2px solid #7F53AC;
     border-radius: 50px;
@@ -87,6 +91,7 @@ legend {
 }
 .section_5{
     width:100%;
+    
 }
 .res{
     font-size: 20px;
@@ -136,9 +141,9 @@ legend {
     }
     .form{
     
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-bottom: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
         
         background-color: aliceblue;
         display: grid;
@@ -244,4 +249,8 @@ legend {
         text-align: center;
         width: 70px;
     }
+    .main_section_5{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 }
