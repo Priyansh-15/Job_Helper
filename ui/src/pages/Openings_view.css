@@ -1,0 +1,49 @@
+.job_tab{
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 20px;
+    
+    background-color: aliceblue;
+    display: flex;
+    
+
+    width: auto;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    
+    border-top: 5px solid #647DEE;
+}
+.IMAGE{
+    margin: 10px;
+}
+.job_details{
+    margin-left: 20px;
+    
+    
+}
+.j_title{
+    font-size: 20px;
+    font-family: Impact,Charcoal,sans-serif;
+    font-weight: 200;
+    color:#7F53AC;;
+}
+.j_type{
+    font-size: 15px;
+    font-family: Impact,Charcoal,sans-serif;
+    font-weight: 200;
+    color:#7F53AC;;
+    
+}
+.j_loca{
+    font-size: 15px;
+    font-family: Impact,Charcoal,sans-serif;
+    font-weight: 100;
+    color:#aba5b1;;
+}
+.j_desc{
+    font-size: 15px;
+    font-family: Impact,Charcoal,sans-serif;
+    font-weight: 100;
+    color:#647DEE;
+}
