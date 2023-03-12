@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 import "./Choice.css"
 const Choice = () => {
     const Data=[
@@ -55,10 +56,12 @@ const Choice = () => {
                     ))
                 }
                  <center>
+                 <Link to ='/loading'>
                  
                 <div className='btn1'>
                  Show Openings
                 </div>
+                </Link>
                 </center>
             </div>
 

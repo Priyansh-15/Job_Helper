@@ -250,7 +250,7 @@ legend {
         width: 70px;
     }
     .main_section_5{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 }
