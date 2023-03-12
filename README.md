@@ -69,6 +69,12 @@ Online Sources:-
 
 <img src="https://user-images.githubusercontent.com/54525819/224476363-6b54f3bf-fa1d-435f-832b-16d1d4ca00d1.png" width="800" height="200">
 
+* Choice page
+<img src="https://user-images.githubusercontent.com/54525819/224542728-96f27291-f46f-4d94-ab72-0623c64ae2f0.png" width="800" height="200">
+
+*Loading
+<img src="https://user-images.githubusercontent.com/54525819/224542803-6552db42-ccef-4e92-8ca2-2843b5613f91.png" width="800" height="200">
+
 
 
 
