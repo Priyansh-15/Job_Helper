@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 
 import "./Homepage.css"
 const Homepage = () => {
@@ -183,18 +183,20 @@ const Homepage = () => {
                   <fieldset>
                     <legend>Resume *</legend>
                     <div className='main_section_5'>
-                      </div> 
+                      
                     <input type='file'/>
                      
-                    <button className='btns'> 
+                    <div className='btns'> 
                       UPLOAD
-                    </button>
+                    </div>
+                    </div> 
                   </fieldset>
                 </div>
                 <center>
+                  <Link to='/choice'>
                 <div className='btn'>
                   NEXT
-                </div>
+                </div></Link>
                 </center>
                 
             </div>
