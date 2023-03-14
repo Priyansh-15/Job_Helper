@@ -1,49 +1,67 @@
 .job_tab{
-    margin-left: 180px;
-    margin-right: 180px;
-    margin-bottom: 20px;
-    
-    background-color: aliceblue;
-    display: flex;
-    
 
-    width: auto;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    display:grid;
+    width:700px;
     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
     padding: 10px;
-    
+    border-radius: 10px;
     border-top: 5px solid #647DEE;
 }
-.IMAGE{
-    margin: 10px;
+.first_r{
+    display: flex;
+    border-bottom:2px solid #647DEE;
+    
 }
-.job_details{
+.IMAGE{
     margin-left: 20px;
+    margin-right: 25px;
     
-    
+}
+img {
+    border-radius: 50%;
+  }
+.job_details{
+    margin-left: 20px; 
 }
 .j_title{
     font-size: 20px;
     font-family: Impact,Charcoal,sans-serif;
     font-weight: 200;
-    color:#7F53AC;;
+    color:#7F53AC;
+    border-bottom:2px solid #647DEE;
 }
 .j_type{
-    font-size: 15px;
+    font-size: 25px;
     font-family: Impact,Charcoal,sans-serif;
     font-weight: 200;
     color:#7F53AC;;
     
 }
 .j_loca{
-    font-size: 15px;
+    font-size: 20px;
     font-family: Impact,Charcoal,sans-serif;
     font-weight: 100;
-    color:#aba5b1;;
+    color:#aba5b1;
+    text-align: left;
 }
 .j_desc{
+    margin-top: 10px;
     font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color:#002cee;
+}
+.j_apply{
+    border-top:2px solid #647DEE;
+    font-size: 20px;
     font-family: Impact,Charcoal,sans-serif;
     font-weight: 100;
-    color:#647DEE;
+    color:aliceblue;
+    width:100px;
+    padding: 3px;
+    background-color: #647DEE;
+    border-radius: 30px;
 }

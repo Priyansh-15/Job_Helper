@@ -3,7 +3,7 @@
 {
     margin-top: 50px;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 35px;
     font-family: Impact,Charcoal,sans-serif;
     font-weight: 400;
     color:aliceblue;
@@ -103,28 +103,25 @@ legend {
     font-size: 25px;
     font-family: Impact,Charcoal,sans-serif;
     font-weight: 200;
-    color:#7F53AC;
+    color:#ffffff;
     border: 5px solid;
-    border-top-color:  #7F53AC;
-    border-bottom-color:  #647DEE;
-    border-left-color:  #7F53AC;
-    border-right-color:  #647DEE;
+    padding: 2px;
+    background-image: linear-gradient(to right, #647DEE, #7F53AC);
     text-align: center;
-    width: 70px;
+    width: 90px;
+    border-radius: 25px;
 }
 .btns{
     font-size: 15px;
     font-family: Impact,Charcoal,sans-serif;
     font-weight: 100;
-    color:#7F53AC;
+    color:#ffffff;
     border: 5px solid;
     border-radius: 20px;
-    border-top-color:  #7F53AC;
-    border-bottom-color:  #647DEE;
-    border-left-color:  #7F53AC;
-    border-right-color:  #647DEE;
+    padding: 2px;
+    background-image: linear-gradient(to right, #647DEE, #7F53AC);
     text-align: center;
-    width: 70px;
+    width: 90px;
 }
 }
 
