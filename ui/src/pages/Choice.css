@@ -46,12 +46,9 @@
     padding: 10px;
     font-family: Impact,Charcoal,sans-serif;
     font-weight: 400;
-    color:#7F53AC;
+    color:#ffffff;
     text-align: center;
-    border-top: 5px solid #7F53AC;
-    border-bottom: 5px solid #647DEE;
-    border-left: 5px solid #7F53AC;
-    border-right: 5px solid #647DEE;
+    background-image: linear-gradient(to right, #647DEE, #7F53AC);
     border-radius: 100px;
 }
 }
@@ -101,12 +98,10 @@
         padding: 10px;
         font-family: Impact,Charcoal,sans-serif;
         font-weight: 400;
-        color:#7F53AC;
+        color:#ffffff;
         text-align: center;
-        border-top: 5px solid #7F53AC;
-        border-bottom: 5px solid #647DEE;
-        border-left: 5px solid #7F53AC;
-        border-right: 5px solid #647DEE;
+       
+        background-image: linear-gradient(to right, #647DEE, #7F53AC);
         border-radius: 100px;
     }
 }
