@@ -1,0 +1,29 @@
+.nav{
+    display:flex;
+    justify-content: center;
+ 
+   
+}
+
+.title{
+    font-size: 50px;
+    font-family: Impact,Charcoal,sans-serif;
+    font-weight: 700;
+    color:aliceblue;
+    width: 500px;
+    text-align: center;
+    
+    
+}
+@media only screen and (max-width: 768px){
+    .title{
+        font-size: 40px;
+        font-family: Impact,Charcoal,sans-serif;
+        font-weight: 400;
+        color:aliceblue;
+        width: 500px;
+        text-align: center;
+        
+        
+    }
+}

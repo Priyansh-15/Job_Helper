@@ -15,8 +15,15 @@ OTHER SOURCES:-
 
 
 ## Google
+Target website:-https://careers.google.com/jobs/results/?category=DATA_CENTER_OPERATIONS&category=DEVELOPER_RELATIONS&category=HARDWARE_ENGINEERING&category=INFORMATION_TECHNOLOGY&category=MANUFACTURING_SUPPLY_CHAIN&category=NETWORK_ENGINEERING&category=PRODUCT_MANAGEMENT&category=PROGRAM_MANAGEMENT&category=SOFTWARE_ENGINEERING&category=TECHNICAL_INFRASTRUCTURE_ENGINEERING&category=TECHNICAL_SOLUTIONS&category=TECHNICAL_WRITING&category=USER_EXPERIENCE&employment_type=INTERN&jex=ENTRY_LEVEL
 
+DATA TO BE EXTRACTED:-
 
+<img src="https://user-images.githubusercontent.com/54525819/224471987-308db510-8752-46de-a39b-170cf72f5b65.png" width="800" height="200">
+
+DATA AFTER EXTRACTION:-
+
+<img src="https://user-images.githubusercontent.com/54525819/224472055-b1172639-1f08-425b-87ba-1a5c7ceae79e.png" width="800" height="200">
 
 ## Cisco
 Target website:- https://jobs.cisco.com/jobs/SearchJobs/?21180=%5B165%5D&21180_format=6022&21181=%5B186%2C194%2C187%2C55816092%5D&21181_format=6023&listFilterMode=1
@@ -39,4 +46,36 @@ DATA TO BE EXTRACTED:-
 DATA AFTER EXTRACTION:-
 
 <img src="https://user-images.githubusercontent.com/54525819/223168443-62b5778d-3403-4274-a9db-ce0a9b5c4dc6.png" width="800" height="200">
+
+
+## All Reference links for UI
+Online Sources:-
+* Reactjs - https://reactjs.org/docs/getting-started.html
+* Reactjs form - https://reactjs.org/docs/forms.html
+* media query - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+### Components
+#### Navbar
+<img src="https://user-images.githubusercontent.com/54525819/224476129-e3d6c772-bbb3-4412-9810-cd78511c576e.png" width="800" height="200">
+
+### Pages
+
+* homepage
+<img src="https://user-images.githubusercontent.com/54525819/224476197-7fc6dbc9-de2a-4ddd-b262-d0ff3bf7582b.png" width="800" height="200">
+
+<img src="https://user-images.githubusercontent.com/54525819/224476287-5babae9b-6894-4a3e-8560-10a67478321d.png" width="800" height="200">
+
+<img src="https://user-images.githubusercontent.com/54525819/224476327-854c8ffa-3299-43e9-b1dc-3a1f08373299.png" width="800" height="200">
+
+<img src="https://user-images.githubusercontent.com/54525819/224476363-6b54f3bf-fa1d-435f-832b-16d1d4ca00d1.png" width="800" height="200">
+
+* Choice page
+<img src="https://user-images.githubusercontent.com/54525819/224542728-96f27291-f46f-4d94-ab72-0623c64ae2f0.png" width="800" height="200">
+
+* Loading
+<img src="https://user-images.githubusercontent.com/54525819/224542803-6552db42-ccef-4e92-8ca2-2843b5613f91.png" width="800" height="200">
+
+
+
+
 
