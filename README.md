@@ -73,7 +73,7 @@ Online Sources:-
 
 
 * Choice page
-<img src="https://user-images.githubusercontent.com/54525819/225198484-49ef2301-ab15-46de-be52-91cd4691a010.png" height="200">
+<img src="https://user-images.githubusercontent.com/54525819/225198484-49ef2301-ab15-46de-be52-91cd4691a010.png" width="800" height="200">
 
 * Loading
 <img src="https://user-images.githubusercontent.com/54525819/225198655-fc0cd6c6-7e55-4714-bd2a-437999aa4399.png" width="800" height="200">
