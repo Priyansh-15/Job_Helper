@@ -56,7 +56,7 @@ Online Sources:-
 
 ### Components
 #### Navbar
-<img src="https://user-images.githubusercontent.com/54525819/224476129-e3d6c772-bbb3-4412-9810-cd78511c576e.png" width="800" height="200">
+<img src="https://user-images.githubusercontent.com/54525819/225198140-f551de3d-5c60-4226-99bb-600212b005c3.png" width="800" height="200">
 
 ### Pages
 
@@ -69,11 +69,18 @@ Online Sources:-
 
 <img src="https://user-images.githubusercontent.com/54525819/224476363-6b54f3bf-fa1d-435f-832b-16d1d4ca00d1.png" width="800" height="200">
 
+<img src="https://user-images.githubusercontent.com/54525819/225198358-68565ba6-04b5-413e-bb73-d3c448aa7212.png" width="800" height="200">
+
+
 * Choice page
-<img src="https://user-images.githubusercontent.com/54525819/224542728-96f27291-f46f-4d94-ab72-0623c64ae2f0.png" width="800" height="200">
+<img src="https://user-images.githubusercontent.com/54525819/225198484-49ef2301-ab15-46de-be52-91cd4691a010.png" height="200">
 
 * Loading
-<img src="https://user-images.githubusercontent.com/54525819/224542803-6552db42-ccef-4e92-8ca2-2843b5613f91.png" width="800" height="200">
+<img src="https://user-images.githubusercontent.com/54525819/225198655-fc0cd6c6-7e55-4714-bd2a-437999aa4399.png" width="800" height="200">
+
+* Openings_view
+<img src="https://user-images.githubusercontent.com/54525819/225199006-28058247-7f8e-4943-b4b9-58b11f2a5210.png" width="800" height="200">
+
 
 
 
