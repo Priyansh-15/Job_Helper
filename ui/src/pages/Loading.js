@@ -24,7 +24,7 @@ const Loading = () => {
             </div>
          </div>
          <div class="text">
-            Please wait...
+            Extracting matched jobs...
          </div>
       </div>
   )

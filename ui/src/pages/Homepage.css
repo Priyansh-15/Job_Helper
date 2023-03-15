@@ -2,11 +2,26 @@
 .user_form_title
 {
     margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 35px;
-    font-family: Impact,Charcoal,sans-serif;
-    font-weight: 400;
-    color:aliceblue;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3px 1px #919191,
+    1px 1px 6px rgba(16,16,16,0.4),
+    1px 2px 10px rgba(16,16,16,0.2),
+    1px 2px 35px rgba(16,16,16,0.2),
+    1px 3px 60px rgba(16,16,16,0.4);
     text-align: center;
 }
 .form{
@@ -130,10 +145,25 @@ legend {
     {
         margin-top: 50px;
         margin-bottom: 10px;
-        font-size: 25px;
-        font-family: Impact,Charcoal,sans-serif;
-        font-weight: 400;
-        color:aliceblue;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: aliceblue;
+        text-shadow: 1px 1px 1px #919191,
+            1px 3px 1px #919191,
+            1px 3px 1px #919191,
+            1px 3px 1px #919191,
+            1px 3px 1px #919191,
+            1px 3px 1px #919191,
+            1px 3px 1px #919191,
+            1px 3px 1px #919191,
+            1px 3px 1px #919191,
+            1px 3px 1px #919191,
+        1px 1px 6px rgba(16,16,16,0.4),
+        1px 2px 10px rgba(16,16,16,0.2),
+        1px 2px 35px rgba(16,16,16,0.2),
+        1px 3px 60px rgba(16,16,16,0.4);
         text-align: center;
     }
     .form{
