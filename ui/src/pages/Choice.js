@@ -43,7 +43,7 @@ const Choice = () => {
   return (
     <div className='choice'>
     <div className='user_form_title'>
-            POSITIONS APPLYING FOR
+            Job Type Selection
             </div>
             <div className='main_options'>
                 {
@@ -55,6 +55,8 @@ const Choice = () => {
                         </center>
                     ))
                 }
+                {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB6FBLdTfaMvSCP_YNKDa0YiG26znI44d2PooB2B19ghWqh-1HuwWe71vhexanpdJylAI&usqp=CAU"></img>
+                <img src="https://www.shutterstock.com/image-vector/graduated-student-logo-260nw-1174254523.jpg"></img> */}
                  <center>
                  <Link to ='/loading'>
                  
