@@ -10,6 +10,27 @@ const Openings_view = () => {
         {
             image_url:"https://static.vecteezy.com/system/resources/previews/009/469/630/original/google-logo-isolated-editorial-icon-free-vector.jpg",
             Company_Name:"Google",
+            Job_Title:"Information Technology Intern",
+            Job_Type:"Internship",
+            Job_Location:"Sydney NSW, Australia",
+            Description:"Currently pursuing a Bachelor’s degree in Information Technology or related technical field.Currently in your penultimate year of study.",
+            Url:"https://careers.google.com/jobs/results/84209077426496198-information-technology-intern-summer-2023-indigenous-identified/?degree=BACHELORS&distance=50&employment_type=INTERN"    
+
+        },
+        
+        {
+            image_url:"https://www.citypng.com/public/uploads/preview/-11596400565qsuxfwyv9j.png",
+            Company_Name:"Amazon",
+            Job_Title:"Software Development Engineer Internship (H/F)",
+            Job_Type:"Internship",
+            Job_Location:"FR, Bordeaux",
+            Description:"Collaborate with experienced cross-disciplinary Amazonians to conceive, design, and bring to market innovative products and services.",
+            Url:"https://www.amazon.jobs/en/jobs/2206003/2023-software-development-engineer-internship-h-f"    
+
+        },
+        {
+            image_url:"https://static.vecteezy.com/system/resources/previews/009/469/630/original/google-logo-isolated-editorial-icon-free-vector.jpg",
+            Company_Name:"Google",
             Job_Title:"Commodity Manager, Supplier Responsibility and Supply Chain Sustainability",
             Job_Type:"Internship",
             Job_Location:"London,Uk",
@@ -17,6 +38,7 @@ const Openings_view = () => {
             Url:"https://careers.google.com/jobs/results/108830945294852806-commodity-manager-supplier-responsibility-and-supply-chain-sustainability/?distance=50&employment_type=FULL_TIME"    
 
         },
+        
         {
             image_url:"https://www.citypng.com/public/uploads/preview/-11596400565qsuxfwyv9j.png",
             Company_Name:"Amazon",
@@ -85,7 +107,7 @@ const Openings_view = () => {
                           <div className='IMAGE'>
                             <img src={item.image_url} alt="icon" width="70" height="70"/>
                           </div>
-                          <div>
+                          <div className='title_tag'>
                           <Link to={item.Url} target='_blank'>
                           <div className='j_title'>
                            {item.Job_Title}
