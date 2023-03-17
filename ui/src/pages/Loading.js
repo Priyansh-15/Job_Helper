@@ -29,7 +29,7 @@ const Loading = () => {
             </div>
          </div>
          <div class="text">
-            Extracting matched jobs...
+            Just a moment...
          </div>
       </div>
   )
