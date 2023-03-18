@@ -1,6 +1,11 @@
 import React from 'react'
 import "./Loading.css"
+import {useLocation} from 'react-router-dom'
+
+    
 const Loading = () => {
+   const location = useLocation();
+   console.log(location.state)
   return (
     <div class="container">
          <div class="wrapper">
@@ -24,7 +29,7 @@ const Loading = () => {
             </div>
          </div>
          <div class="text">
-            Extracting matched jobs...
+            Just a moment...
          </div>
       </div>
   )

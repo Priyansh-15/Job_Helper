@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
+import Navbar from '../components/Navbar';
 import "./Homepage.css"
 const Homepage = () => {
 
@@ -48,7 +48,7 @@ const Homepage = () => {
   return (
     
     <div>
-        
+          <Navbar/>
          <div className='mainapp'>
             <div className='user_form_title'>
               User Profile Details
