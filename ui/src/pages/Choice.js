@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 import "./Choice.css"
 const Choice = () => {
     const navigate = useNavigate();
@@ -52,6 +53,7 @@ const Choice = () => {
   return (
     
     <div className='choice'>
+        
     <div className='user_form_title'>
             Job Type Selection
             </div>
