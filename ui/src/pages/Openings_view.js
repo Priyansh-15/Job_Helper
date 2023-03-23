@@ -3,9 +3,8 @@ import {Link} from 'react-router-dom'
 import { ImLocation } from 'react-icons/im';
 import { HiOfficeBuilding } from 'react-icons/hi';
 import "./Openings_view.css"
-import Navbar from '../components/Navbar';
 
-const Openings_view = () => {
+const OpeningsView = () => {
     const num1=499;
     const job_data=[
         {
@@ -95,7 +94,6 @@ const Openings_view = () => {
     ]
   return (
     <div>
-        <Navbar/>
         <div className='user_form_titleo'>
              {num1} jobs matched
 
@@ -150,4 +148,4 @@ const Openings_view = () => {
   )
 }
 
-export default Openings_view
+export default OpeningsView

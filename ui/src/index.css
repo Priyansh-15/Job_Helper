@@ -1,8 +1,16 @@
-html{
-  height: 100%;
+* {
+  margin: 0;
+  padding: 0;
 }
-body {
-  
+
+html,
+body {  
+  height: 100%;
   background-color: #211729;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  padding-top: 80px;
 }
 
