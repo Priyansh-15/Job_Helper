@@ -62,29 +62,48 @@ const Choice = () => {
             </div>
             
             <div className='main_options'>
-                <div className='image_row'>
-                 <div className='image1'>
+                <div className='button_row'>
+                    <div className='option_col'>
+                    
+                <div className='image1'>
                     <img src='./image/intern.png' height='120px' width='120px'/>
                   </div>
-                  <div className='image1'>
+                  <div className='descript'>
+                                  Write something realted to Internship
+                  </div>
+                    <div className='options' onClick={()=>handleonClick(Data[0])} >
+                           
+                        {Data[0].subject}
+                        </div>
+                        </div>
+                        <div className='option_col'>
+                        <div className='image1'>
                     <img src='./image/new_grad.png' height='120px' width='120px'/>
                   </div>
-                  <div className='image1'>
+                  <div className='descript'>
+                                  Write something realted to New_Graduates
+                  </div>
+                        <div className='options' onClick={()=>handleonClick(Data[1])} >
+                           
+                        {Data[1].subject}
+                        </div></div>
+                        <div className='option_col'>
+                        <div className='image1'>
                     <img src='./image/experienced.png' height='120px' width='120px'/>
                   </div>
-                </div>
-                <div className='button_row'>
-                {
-                    
-                    select.map((item, idx)=>(
-                       
-                    <div className='options' onClick={()=>handleonClick(item)} >
-                        {item.subject}
+                  <div className='descript'>
+                                  Write something realted to Experienced candidates
+                  </div>
+                  <div className='options' onClick={()=>handleonClick(Data[2])} >
+                           
+                        {Data[2].subject}
                         </div>
+                        </div>
+                        
                        
                        
-                    ))
-                }
+                    
+                
                 </div>
                 {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB6FBLdTfaMvSCP_YNKDa0YiG26znI44d2PooB2B19ghWqh-1HuwWe71vhexanpdJylAI&usqp=CAU"></img>
                 <img src="https://www.shutterstock.com/image-vector/graduated-student-logo-260nw-1174254523.jpg"></img> */}
