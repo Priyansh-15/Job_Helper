@@ -1,9 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar';
+import Slider from "@mui/material/Slider";
 import "./Homepage.css"
 const Homepage = () => {
-
+  function valuetext(value) {
+    return `${value}°C`;
+  }
   const initialFormData =[{
     name: "",
     email: "",
@@ -114,50 +117,59 @@ const Homepage = () => {
                       <div className='labels'>
                          <span>C++/C</span>
                           <br/>
-                            <input type="text" className='search_box'  name="cplus" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="cplus" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       
                       <div className='labels'>
                       <span>Python</span>
                           <br/>
-                            <input type="text" className='search_box'  name="python" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="python" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       
                       <div className='labels'>
                       <span>Java</span>
                           <br/>
-                            <input type="text" className='search_box'  name="java" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="java" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       
                       <div className='labels'>
                       <span>JavaScript</span>
                           <br/>
-                            <input type="text" className='search_box'  name="javascript" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="javascript" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       <div className='labels'>
                           <span>Data Structures and Algorithms</span>
                           <br/>
-                            <input type="text"  className='search_box' name="dsa" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="dsa" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                         </div>
                       <div className='labels'>
                       <span>Problem Solving</span>
                           <br/>
-                            <input type="text" className='search_box'  name="problem_solving" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="problem_solving" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       <div className='labels'>
                           <span>MySQL</span>
                           <br/>
-                            <input type="text" className='search_box'  name="sql" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="sql" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       <div className='labels'>
                           <span>Web services</span>
                           <br/>
-                            <input type="text" className='search_box'  name="web" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="web" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       <div className='labels'>
                           <span>HTML/CSS</span>
                           <br/>
-                            <input type="text" className='search_box'  name="html_css" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="html_css" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       </div>
                   </fieldset>
@@ -169,22 +181,26 @@ const Homepage = () => {
                     <div className='labels'>
                           <span>Reading, Writing, Speaking (English)</span>
                           <br/>
-                            <input type="text" className='search_box'  name="english" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="english" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       <div className='labels'>
                           <span>Team work</span>
                           <br/>
-                            <input type="text" className='search_box'  name="team_work" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="team_work" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       <div className='labels'>
                           <span>Leadership</span>
                           <br/>
-                            <input type="text" className='search_box'  name="leadership" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="leadership" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div>
                       <div className='labels'>
                           <span>Adaptability</span>
                           <br/>
-                            <input type="text" className='search_box'  name="adapt" placeholder='Rate on scale(1-10)' onChange={handleChange}/>
+                          <Slider name="adapt" getAriaValueText={valuetext} valueLabelDisplay="auto"
+                            step={1} min={1} max={10} onChange={handleChange}/>
                       </div> 
                       </div>
                   </fieldset>
