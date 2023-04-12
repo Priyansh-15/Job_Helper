@@ -24,6 +24,11 @@
     "stream": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

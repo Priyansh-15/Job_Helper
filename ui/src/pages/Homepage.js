@@ -3,10 +3,14 @@ import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar';
 import Slider from "@mui/material/Slider";
 import "./Homepage.css"
+var fs = require('fs');
+
+
 const Homepage = () => {
   function valuetext(value) {
     return `${value}°C`;
   }
+
   const initialFormData =[{
     name: "",
     email: "",
@@ -43,11 +47,12 @@ const Homepage = () => {
     });
     
   };
+  
   const handleSubmit = () => {
     console.log(formData)
     
-
   }
+  
   return (
     
     <div>
@@ -252,7 +257,7 @@ const Homepage = () => {
                 </div>
                 <center>
                   <Link to='/choice'>
-                <div className='btn' onClick={()=>handleSubmit()}>
+                <div className='btn' onClick={python_excute}>
                   NEXT
                 </div></Link>
                 </center>
