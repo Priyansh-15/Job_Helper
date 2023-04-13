@@ -178,11 +178,15 @@ def Adobe_job_experienced_scrape():
             soup0=BeautifulSoup(''.join(page0), 'lxml')
             dom0 = etree.HTML(str(soup0))
             description=dom0.xpath(adobe_description)[0].text
-            print(description)
-            adobe_job_expand='/html/body/div[2]/div[3]/div/div/div/div[2]/section[2]/div/div/div/div[1]/div[2]/div[2]/ul/li[1'+str(index)+']/div[1]/div[1]/span/a/div/span'
+        
+            adobe_job_expand='/html/body/div[2]/div[3]/div/div/div/div[2]/section[2]/div/div/div/div[1]/div[2]/div[2]/ul/li['+str(index)+']/div[1]/div[1]/span/a/div'
+            print(driver.find_element(By.XPATH,adobe_job_expand))
+            print(adobe_job_expand)
+            time.sleep(10)
             wait.until(EC.element_to_be_clickable((By.XPATH,adobe_job_expand))).click()
+
             wait.until(EC.presence_of_element_located((By.XPATH,adobe_job_title))) #dummy to wait till page is loaded
-   
+
             page = driver.execute_script('return document.body.innerHTML')
             soup=BeautifulSoup(''.join(page), 'lxml')
             dom = etree.HTML(str(soup))
@@ -197,32 +201,33 @@ def Adobe_job_experienced_scrape():
                 location="Multiple Location"
             
             job_data={
-                'Company_Name':'Amazon',
+                'Company_Name':'Adobe',
                 'Job_title':job_title,
                 'Url':job_url,
                 'Location':location,
-                'Description':text_decode(description)
+                'Description':description
             } 
             adobe_experienced.append(job_data)
             
             #wait.until(EC.element_to_be_clickable((By.XPATH,amazon_back_button))).click() 
             driver.back()
             #time.sleep(1.5)
-            wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[2]/div[3]/div/div/div/div[2]/section[2]/div/div/div/div[1]/div[2]/div[2]/ul/li[1'+str(index)+']/div[1]/div[1]/span/a/div/span')))
+            wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[2]/div[3]/div/div/div/div[2]/section[2]/div/div/div/div[1]/div[2]/div[2]/ul/li['+str(index)+']/div[1]/div[1]/span/a/div/span')))
             print(index-1)
-            
+        
 
         except TimeoutException:
             driver.quit()
             break
+    add_to_csv(fieldnames,adobe_experienced,'Adobe_experienced_openings.csv')
 
 
 
 
-def add_to_csv(fieldnames,google,title):
+def add_to_csv(fieldnames,adobe,title):
     with open(title, 'w', encoding='UTF8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writerows(google)
+        writer.writerows(adobe)
 
 
 
