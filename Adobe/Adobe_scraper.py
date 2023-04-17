@@ -29,8 +29,8 @@ adobe_job_location='/html/body/div[2]/div[3]/div/div[1]/div[2]/section/div/div/d
 adobe_job_title='/html/body/div[2]/div[3]/div/div[1]/div[2]/section/div/div/div/div[1]/h1'
 
 
-def Adobe_job_internship_scrape():
-    index=1
+def Adobe_job_internship_scrape(index):
+    
     adobe_internship=[]
     location=""
     description=""
@@ -109,8 +109,8 @@ def Adobe_job_internship_scrape():
             break
     add_to_csv(fieldnames,adobe_internship,'Adobe_internship_openings.csv')
 
-def Adobe_job_newgrad_scrape():
-    index=1
+def Adobe_job_newgrad_scrape(index):
+    
     adobe_newgrad=[]
     location=""
     description=""
@@ -191,8 +191,8 @@ def Adobe_job_newgrad_scrape():
 
 
 
-def Adobe_job_experienced_scrape():
-    index=1
+def Adobe_job_experienced_scrape(index):
+   
     adobe_experienced=[]
     location=""
     description=""
@@ -280,6 +280,6 @@ def add_to_csv(fieldnames,adobe,title):
         writer.writerows(adobe)
 
 
-# Adobe_job_internship_scrape()
-# Adobe_job_newgrad_scrape()
-# Adobe_job_experienced_scrape()
+Adobe_job_internship_scrape(1)
+# Adobe_job_newgrad_scrape(1)
+# Adobe_job_experienced_scrape(1)
