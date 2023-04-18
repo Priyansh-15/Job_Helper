@@ -275,7 +275,7 @@ def Adobe_job_experienced_scrape(index):
 
 
 def add_to_csv(fieldnames,adobe,title):
-    with open(title, 'w', encoding='UTF8', newline='') as f:
+    with open(title, 'w', encoding='UTF16', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writerows(adobe)
 
