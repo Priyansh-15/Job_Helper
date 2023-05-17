@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,useLocation } from 'react-router-dom';
 
 
 import "./Choice.css"
 const Choice = () => {
+    const location1 = useLocation();
     const navigate = useNavigate();
-
+    
+    console.log(location1.state)
     const Data=[
         {
            id:1,
@@ -34,21 +36,12 @@ const Choice = () => {
                 return val;
             }
 
-        })   
-            
-        setSelect(newItems) 
-    
-        
-            navigate('/loading',{state:newItems })
-    
-       
-        
-      
+        })     
+        setSelect(newItems)
+        let obj={...location1.state,...newItems}
+        console.log(obj)
+            navigate('/loading',{state:obj })  
     }
-
-    
- 
-
 
   return (
     

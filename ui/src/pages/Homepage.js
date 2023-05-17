@@ -1,16 +1,15 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link,useNavigate} from 'react-router-dom'
 import Navbar from '../components/Navbar';
 import Slider from "@mui/material/Slider";
 import "./Homepage.css"
-var fs = require('fs');
 
 
 const Homepage = () => {
   function valuetext(value) {
     return `${value}°C`;
   }
-
+  const navigate=useNavigate();
   const initialFormData =[{
     name: "",
     email: "",
@@ -49,9 +48,10 @@ const Homepage = () => {
   };
   
   const handleSubmit = () => {
-    console.log(formData)
+    navigate('/choice',{state:formData})     
     
   }
+  
   
   return (
     
@@ -256,10 +256,10 @@ const Homepage = () => {
                   </fieldset>
                 </div>
                 <center>
-                  <Link to='/choice'>
-                <div className='btn' onClick={python_excute}>
+                  
+                <div className='btn' onClick={handleSubmit}>
                   NEXT
-                </div></Link>
+                </div>
                 </center>
                 
             </div>

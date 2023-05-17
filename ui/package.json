@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
     "flatlist-react": "^1.5.13",
     "json2csv": "^6.0.0-alpha.2",
     "os": "^0.1.2",
@@ -47,6 +48,8 @@
       "not dead",
       "not op_mini all"
     ],
+    "proxy":"http://127.0.0.1:5000"
+    ,
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

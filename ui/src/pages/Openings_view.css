@@ -70,6 +70,18 @@ img {
     color:#1e003d;
    
 }
+.j_percent{
+    text-decoration: none;
+    padding: 5px;
+    height: 30px;
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    color:#1e003d;
+   
+}
 .title_tag{
     text-align: left;
 }
@@ -90,6 +102,14 @@ img {
 }
 .j_desc{
     margin-top: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color:#454b64;
+   
+}
+.j_mis{
+    border-top: #647DEE solid 2px;
     font-size: 15px;
     margin-bottom: 10px;
     font-weight: 500;
