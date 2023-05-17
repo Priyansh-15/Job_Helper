@@ -4,7 +4,6 @@ import { ImLocation } from 'react-icons/im';
 import { HiOfficeBuilding } from 'react-icons/hi';
 import "./Openings_view.css"
 import Navbar from '../components/Navbar';
-import data from './internship_jobs.json'
 const Openings_view = () => {
   const location2 = useLocation();
 
