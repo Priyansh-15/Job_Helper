@@ -35,20 +35,41 @@ def text_decode(txt):
             t=1
         elif(s=='<'):
             t=0
-        if(t==1 and s!='>'):
+        if(t==1 and s!='>' and s!='\n'):
            str+=s
-    return str
-           
+    f=1
+    str1=''
+    
+    for st in str:
+        if(st==' ' and f==1):
+            f=0
+            str1+=st
+        elif(st!=' '):
+            f=1
+            str1+=st 
+
+    return str1
+
+
            
 
-def Google_job_internship_scrape(index):
+def Google_job_internship_scrape():
+    index=1
     google_internship=[]
+    google_internship.append({
+                    'Company_Name':'Company_Name',
+                    'Job_title':'Job_title',
+                    'Url':'Url',
+                    'Location':'Location',
+                    'Description':'Description'
+                } )
     location=""
     description=""
     driver = webdriver.Chrome(options=options)
-   
+    driver.maximize_window()
     driver.get(GOOGLE_INTERNSHIP_URL)
     wait=WebDriverWait(driver,10)
+    
     while True:
         try:
             google_job_expand='//*[@id="search-results"]/li['+str(index)+']/div/a/div'
@@ -66,7 +87,7 @@ def Google_job_internship_scrape(index):
             job_url=driver.current_url
             location_data=dom.xpath(google_job_location)
             description_data=dom.xpath(google_job_description)
-
+            job_title=job_title.replace('\n','')
             for l in location_data:
                 location=etree.tostring(l, pretty_print=True).decode()
                 location=text_decode(location)
@@ -86,7 +107,7 @@ def Google_job_internship_scrape(index):
             wait.until(EC.element_to_be_clickable((By.XPATH,google_back_button))).click() 
             time.sleep(1.5)
             #wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="search-results"]/li['+str(index-1)+']/div/a/div')))
-            driver.execute_script("window.scrollTo(0, 1000)") 
+            driver.execute_script("window.scrollTo(0, 1080)") 
             print("index")
 
         except TimeoutException:
@@ -94,17 +115,31 @@ def Google_job_internship_scrape(index):
             break
 
     add_to_csv(fieldnames,google_internship,'Google_internship_openings.csv')
+    return "google jobs added to csv"
+    
 
 
 
-def Google_job_newgrad_scrape(index):
+
+def Google_job_newgrad_scrape():
+    
+    index=1
     google_newgrad=[]
+    google_newgrad.append({
+                    'Company_Name':'Company_Name',
+                    'Job_title':'Job_title',
+                    'Url':'Url',
+                    'Location':'Location',
+                    'Description':'Description'
+                } )
     location=""
     description=""
     driver = webdriver.Chrome(options=options)
-   
+    
     driver.get(GOOGLE_NEWGRAD_URL)
+    driver.maximize_window()
     wait=WebDriverWait(driver,10)
+ 
     while True:
         try:
             google_job_expand='//*[@id="search-results"]/li['+str(index)+']/div/a/div'
@@ -122,7 +157,7 @@ def Google_job_newgrad_scrape(index):
             job_url=driver.current_url
             location_data=dom.xpath(google_job_location)
             description_data=dom.xpath(google_job_description)
-
+            job_title=job_title.replace('\n','')
             for l in location_data:
                 location=etree.tostring(l, pretty_print=True).decode()
                 location=text_decode(location)
@@ -142,25 +177,37 @@ def Google_job_newgrad_scrape(index):
             wait.until(EC.element_to_be_clickable((By.XPATH,google_back_button))).click() 
             time.sleep(1.5)
             #wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="search-results"]/li['+str(index-1)+']/div/a/div')))
-            driver.execute_script("window.scrollTo(0, 1080)") 
+            driver.execute_script("window.scrollTo(0, 1000)") 
             print("index")
 
         except TimeoutException:
             driver.quit()
             break
-
     add_to_csv(fieldnames,google_newgrad,'Google_newgrad_openings.csv')
+    return "google jobs added to csv"
 
 
 
-def Google_job_experienced_scrape(index):
+
+
+def Google_job_experienced_scrape():
+    index=1
     google_experienced=[]
+    google_experienced.append({
+                    'Company_Name':'Company_Name',
+                    'Job_title':'Job_title',
+                    'Url':'Url',
+                    'Location':'Location',
+                    'Description':'Description'
+                } )
     location=""
     description=""
     driver = webdriver.Chrome(options=options)
    
     driver.get(GOOGLE_EXPERIENCED_URL)
+    driver.maximize_window()
     wait=WebDriverWait(driver,10)
+   
     while True:
         try:
             google_job_expand='//*[@id="search-results"]/li['+str(index)+']/div/a/div'
@@ -185,7 +232,7 @@ def Google_job_experienced_scrape(index):
 
             for d in description_data:
                 description=etree.tostring(d, pretty_print=True).decode()
-            
+            job_title=job_title.replace('\n','')
             job_data={
                 'Company_Name':'Google',
                 'Job_title':job_title,
@@ -206,15 +253,17 @@ def Google_job_experienced_scrape(index):
             break
 
     add_to_csv(fieldnames,google_experienced,'Google_experienced_openings.csv')
+    return "google jobs added to csv"    
+
 
 
 
 def add_to_csv(fieldnames,google,title):
-    with open(title, 'w', encoding='UTF8', newline='') as f:
+    with open(title, 'w', encoding='utf-8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writerows(google)
 
 
-Google_job_internship_scrape(1)
-# Google_job_newgrad_scrape(1)
-# Google_job_experienced_scrape(1)
+# intern_x=Google_job_internship_scrape()
+# Google_job_newgrad_scrape()
+# Google_job_experienced_scrape()
